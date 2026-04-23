@@ -58,11 +58,11 @@ function getTransactionDigest(
 		| {
 				$kind: 'Transaction';
 				Transaction: { digest: string };
-		  }
+		}
 		| {
 				$kind: 'FailedTransaction';
 				FailedTransaction: { digest: string };
-		  },
+		},
 ) {
 	return result.$kind === 'Transaction' ? result.Transaction.digest : result.FailedTransaction.digest;
 }
@@ -183,7 +183,7 @@ export default function GreetingManager() {
 	}
 
 	return (
-		<section className="rounded-[2rem] border border-white/60 bg-white/80 p-6 shadow-[0_20px_80px_rgba(15,23,42,0.12)] backdrop-blur md:p-8">
+		<section className="rounded-[2rem]border border-white/60 bg-white/80 p-6 shadow-[0_20px_80px_rgba(15,23,42,0.12)] backdrop-blur md:p-8">
 			<div className="mb-8 flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
 				<div className="max-w-2xl">
 					<p className="mb-3 inline-flex rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-sky-700">
@@ -225,7 +225,7 @@ export default function GreetingManager() {
 
 			<div className="mt-8 grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
 				<div className="space-y-6">
-					<div className="rounded-[1.5rem] border border-emerald-200 bg-emerald-50/70 p-5">
+					<div className="rounded-[1.5rem]border border-emerald-200 bg-emerald-50/70 p-5">
 						<div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
 							<div>
 								<h3 className="text-lg font-semibold text-slate-900">1. Tao Greeting shared object</h3>
@@ -246,7 +246,7 @@ export default function GreetingManager() {
 
 					<form
 						onSubmit={handleUpdateGreeting}
-						className="rounded-[1.5rem] border border-amber-200 bg-amber-50/60 p-5"
+						className="rounded-[1.5rem]border border-amber-200 bg-amber-50/60 p-5"
 					>
 						<div className="mb-5">
 							<h3 className="text-lg font-semibold text-slate-900">2. Cap nhat text</h3>
@@ -310,7 +310,7 @@ export default function GreetingManager() {
 				</div>
 
 				<div className="space-y-4">
-					<div className="rounded-[1.5rem] border border-slate-200 bg-slate-950 p-5 text-slate-50">
+					<div className="rounded-[1.5rem]border border-slate-200 bg-slate-950 p-5 text-slate-50">
 						<p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Vi hien tai</p>
 						{account ? (
 							<>
@@ -324,7 +324,7 @@ export default function GreetingManager() {
 						)}
 					</div>
 
-					<div className="rounded-[1.5rem] border border-slate-200 bg-white p-5">
+					<div className="rounded-[1.5rem]border border-slate-200 bg-white p-5">
 						<p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Ket qua moi nhat</p>
 						{status ? <p className="mt-3 text-sm leading-6 text-slate-700">{status}</p> : null}
 						{error ? (
@@ -339,7 +339,7 @@ export default function GreetingManager() {
 						) : null}
 					</div>
 
-					<div className="rounded-[1.5rem] border border-slate-200 bg-white p-5">
+					<div className="rounded-[1.5rem]border border-slate-200 bg-white p-5">
 						<p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Explorer Links</p>
 						<div className="mt-4 space-y-4 text-sm">
 							<div>
@@ -395,7 +395,7 @@ export default function GreetingManager() {
 						</div>
 					</div>
 
-					<div className="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-5 text-sm leading-6 text-slate-600">
+					<div className="rounded-[1.5rem]border border-slate-200 bg-slate-50 p-5 text-sm leading-6 text-slate-600">
 						<p className="font-medium text-slate-900">Cach dung nhanh</p>
 						<p className="mt-2">1. Connect vi testnet.</p>
 						<p>2. Bam `Tao Greeting` de tao shared object.</p>
