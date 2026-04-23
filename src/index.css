@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+:root {
+	color: #0f172a;
+	background: #f8fafc;
+	font-family:
+		"Space Grotesk",
+		"Segoe UI",
+		system-ui,
+		sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	min-width: 320px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
