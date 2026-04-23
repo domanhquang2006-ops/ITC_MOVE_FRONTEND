@@ -3,9 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+<<<<<<< HEAD
   "engines": {
     "node": "^20.19.0 || >=22.12.0 <23"
   },
+=======
+>>>>>>> 084f0bc076a555d84f326ed30de4f6cdc6825f85
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -13,6 +16,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@mysten/dapp-kit-react": "^2.0.1",
     "@mysten/sui": "^2.16.0",
     "@tailwindcss/vite": "^4.2.4",
@@ -20,6 +24,12 @@
     "react-dom": "^19.2.5",
     "tailwindcss": "^4.2.4",
     "zustand": "^5.0.12"
+=======
+    "@tailwindcss/vite": "^4.2.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "tailwindcss": "^4.2.4"
+>>>>>>> 084f0bc076a555d84f326ed30de4f6cdc6825f85
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",
